@@ -50,7 +50,7 @@ int main(int argc, char *argv[]) {
 
     /*      Map the file into memory     */
     char *addr = mmap(NULL, file_size, PROT_READ, MAP_PRIVATE, elf_file_fd, 0);
-    if (addr == MAP_FAILED) { puts("Mapping Error\n\n"); return 1;}
+    if (addr == MAP_FAILED) { puts("Mapping Error\n\n"); return 1; }
 
     Elf64_Ehdr *ehdr = (Elf64_Ehdr*) addr;
 
