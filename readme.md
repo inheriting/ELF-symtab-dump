@@ -1,4 +1,4 @@
-# ELF Parser
+# ELF Symbol Table Dump
 
 This program parses an ELF file and displays information about its symbols.
 
